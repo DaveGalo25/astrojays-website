@@ -1,0 +1,433 @@
+.support {
+  margin-top: 60px;
+}
+
+.support-hero {
+  background: linear-gradient(135deg, #33b3e6 0%, #1a9fd9 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.support-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.support-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.support-content {
+  padding: 4rem 0;
+}
+
+/* Why Support Section */
+.why-support {
+  margin-bottom: 4rem;
+}
+
+.why-support h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.reason-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+}
+
+.reason-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.reason-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.reason-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Sponsorship Section */
+.sponsorship {
+  margin-bottom: 4rem;
+}
+
+.sponsorship h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.sponsorship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.sponsorship-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sponsorship-card:hover {
+  transform: translateY(-5px);
+}
+
+.sponsorship-header {
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 4px solid;
+}
+
+.sponsorship-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.sponsorship-amount {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #33b3e6;
+}
+
+.sponsorship-benefits {
+  padding: 2rem;
+}
+
+.sponsorship-benefits h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.sponsorship-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sponsorship-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  color: #666;
+}
+
+.benefit-icon {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Donation Methods */
+.donation-methods {
+  margin-bottom: 4rem;
+}
+
+.donation-methods h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.method-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.method-card.preferred {
+  border: 3px solid #33b3e6;
+}
+
+.method-card:hover {
+  transform: translateY(-5px);
+}
+
+.preferred-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #00a3e0;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.method-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.method-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.method-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.method-button {
+  background: #33b3e6;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.method-button:hover {
+  background: #1a9fd9;
+  transform: translateY(-2px);
+}
+
+/* Impact Section */
+.impact {
+  background: #f8f9fa;
+  padding: 3rem;
+  border-radius: 15px;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.impact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.impact-stat {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.impact-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #33b3e6;
+  margin-bottom: 0.5rem;
+}
+
+.impact-label {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.impact-description p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-support {
+  margin-bottom: 4rem;
+}
+
+.contact-support h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact-support > p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.contact-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+}
+
+.contact-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.contact-card p {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* FAQ Section */
+.faq {
+  background: #f8f9fa;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .support-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .support-hero p {
+    font-size: 1rem;
+  }
+  
+  .reasons-grid,
+  .sponsorship-grid,
+  .methods-grid,
+  .impact-stats,
+  .contact-info,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .why-support h2,
+  .sponsorship h2,
+  .donation-methods h2,
+  .impact h2,
+  .contact-support h2,
+  .faq h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .support-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .impact,
+  .faq {
+    padding: 2rem 1rem;
+  }
+  
+  .sponsorship-header,
+  .sponsorship-benefits {
+    padding: 1.5rem;
+  }
+} 
