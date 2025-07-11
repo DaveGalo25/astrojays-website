@@ -4,9 +4,9 @@ import './About.css';
 const About = () => {
   const executiveBoard = [
     {
-      name: "Alex Chen",
+      name: "Granger Maher",
       position: "President",
-      major: "Mechanical Engineering '25",
+      major: "Mechanical Engineering '27",
       hometown: "San Francisco, California",
       department: "Leadership"
     },
@@ -18,17 +18,10 @@ const About = () => {
       department: "Leadership"
     },
     {
-      name: "Michael Rodriguez",
+      name: "Ashwin Narayanan",
       position: "Chief Engineer",
-      major: "Mechanical Engineering '26",
-      hometown: "Miami, Florida",
-      department: "Leadership"
-    },
-    {
-      name: "Emily Davis",
-      position: "Treasurer",
-      major: "Computer Science '25",
-      hometown: "Seattle, Washington",
+      major: "Mechanical Engineering '27",
+      hometown: "Mumbai, India",
       department: "Leadership"
     }
   ];
@@ -54,6 +47,27 @@ const About = () => {
       major: "Chemical Engineering '26",
       hometown: "Boston, Massachusetts",
       department: "Propulsion"
+    },
+    {
+      name: "Maria Garcia",
+      position: "Propulsion Member",
+      major: "Mechanical Engineering '27",
+      hometown: "San Antonio, Texas",
+      department: "Propulsion"
+    },
+    {
+      name: "Daniel Park",
+      position: "Propulsion Member",
+      major: "Chemical Engineering '28",
+      hometown: "Seattle, Washington",
+      department: "Propulsion"
+    },
+    {
+      name: "Aisha Patel",
+      position: "Propulsion Member",
+      major: "Mechanical Engineering '26",
+      hometown: "Detroit, Michigan",
+      department: "Propulsion"
     }
   ];
 
@@ -77,6 +91,20 @@ const About = () => {
       position: "Structures Member",
       major: "Mechanical Engineering '26",
       hometown: "Atlanta, Georgia",
+      department: "Structures"
+    },
+    {
+      name: "Chris Thompson",
+      position: "Structures Member",
+      major: "Civil Engineering '27",
+      hometown: "Minneapolis, Minnesota",
+      department: "Structures"
+    },
+    {
+      name: "Sofia Rodriguez",
+      position: "Structures Member",
+      major: "Mechanical Engineering '28",
+      hometown: "Tampa, Florida",
       department: "Structures"
     }
   ];

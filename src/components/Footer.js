@@ -10,7 +10,7 @@ const Footer = () => {
           <img src="/whiting.logo_.small_.vertical.white_-768x543.png" alt="Hopkins Seal" className="footer-seal left" />
         </Link>
         <div className="footer-social-links">
-          <a href="/" className="footer-social-link" aria-label="Instagram">
+          <a href="https://www.instagram.com/hopkinsrocketry/" className="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
             <img src="/instagram-new.png" alt="Instagram" className="footer-social-img" />
           </a>
           <a href="/" className="footer-social-link" aria-label="YouTube">
