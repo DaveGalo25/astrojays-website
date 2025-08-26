@@ -4,10 +4,22 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isProjectsOpen, setIsProjectsOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleProjects = () => {
+    setIsProjectsOpen(!isProjectsOpen);
+    setIsAboutOpen(false);
+  };
+
+  const toggleAbout = () => {
+    setIsAboutOpen(!isAboutOpen);
+    setIsProjectsOpen(false);
   };
 
   return (
@@ -31,20 +43,66 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <Link 
-            to="/about" 
-            className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </Link>
-          <Link 
-            to="/projects" 
-            className={`nav-link ${location.pathname === '/projects' ? 'active' : ''}`}
-            onClick={() => setIsOpen(false)}
-          >
-            Projects
-          </Link>
+          <div className="nav-dropdown">
+            <button 
+              className={`nav-link dropdown-toggle ${location.pathname.startsWith('/about') ? 'active' : ''}`}
+              onClick={toggleAbout}
+            >
+              About
+            </button>
+            <div className={`dropdown-menu ${isAboutOpen ? 'show' : ''}`}>
+              <Link 
+                to="/about" 
+                className="dropdown-item"
+                onClick={() => {
+                  setIsOpen(false);
+                  setIsAboutOpen(false);
+                }}
+              >
+                Members
+              </Link>
+              <Link 
+                to="/faq" 
+                className="dropdown-item"
+                onClick={() => {
+                  setIsOpen(false);
+                  setIsAboutOpen(false);
+                }}
+              >
+                FAQ
+              </Link>
+            </div>
+          </div>
+          <div className="nav-dropdown">
+            <button 
+              className={`nav-link dropdown-toggle ${location.pathname.startsWith('/projects') ? 'active' : ''}`}
+              onClick={toggleProjects}
+            >
+              Projects
+            </button>
+            <div className={`dropdown-menu ${isProjectsOpen ? 'show' : ''}`}>
+              <Link 
+                to="/projects" 
+                className="dropdown-item"
+                onClick={() => {
+                  setIsOpen(false);
+                  setIsProjectsOpen(false);
+                }}
+              >
+                Rockets
+              </Link>
+              <Link 
+                to="/motors" 
+                className="dropdown-item"
+                onClick={() => {
+                  setIsOpen(false);
+                  setIsProjectsOpen(false);
+                }}
+              >
+                Motors
+              </Link>
+            </div>
+          </div>
           <Link 
             to="/support" 
             className={`nav-link ${location.pathname === '/support' ? 'active' : ''}`}

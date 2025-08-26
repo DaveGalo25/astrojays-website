@@ -7,155 +7,100 @@ const About = () => {
       name: "Granger Maher",
       position: "President",
       major: "Mechanical Engineering '27",
-      hometown: "San Francisco, California",
-      department: "Leadership"
-    },
-    {
-      name: "Sarah Johnson",
-      position: "Vice President",
-      major: "Aerospace Engineering '25",
-      hometown: "Austin, Texas",
       department: "Leadership"
     },
     {
       name: "Ashwin Narayanan",
       position: "Chief Engineer",
       major: "Mechanical Engineering '27",
-      hometown: "Mumbai, India",
       department: "Leadership"
     }
   ];
 
   const propulsionTeam = [
     {
-      name: "David Kim",
-      position: "Propulsion Lead",
-      major: "Chemical Engineering '26",
-      hometown: "Los Angeles, California",
-      department: "Propulsion"
-    },
-    {
-      name: "Rachel Green",
-      position: "Propulsion Member",
+      name: "Granger Maher",
+      position: "Liquid Propulsion Lead",
       major: "Mechanical Engineering '27",
-      hometown: "Chicago, Illinois",
       department: "Propulsion"
     },
     {
-      name: "James Wilson",
-      position: "Propulsion Member",
-      major: "Chemical Engineering '26",
-      hometown: "Boston, Massachusetts",
-      department: "Propulsion"
-    },
-    {
-      name: "Maria Garcia",
-      position: "Propulsion Member",
+      name: "Ashwin Narayanan",
+      position: "Solid Propulsion Lead",
       major: "Mechanical Engineering '27",
-      hometown: "San Antonio, Texas",
       department: "Propulsion"
     },
     {
-      name: "Daniel Park",
+      name: "Brennan McGrann",
       position: "Propulsion Member",
       major: "Chemical Engineering '28",
-      hometown: "Seattle, Washington",
       department: "Propulsion"
     },
     {
-      name: "Aisha Patel",
+      name: "Brianna Bledsoe",
       position: "Propulsion Member",
-      major: "Mechanical Engineering '26",
-      hometown: "Detroit, Michigan",
+      major: "Mechanical Engineering '27",
       department: "Propulsion"
-    }
+    },
   ];
 
   const structuresTeam = [
     {
-      name: "Lisa Park",
+      name: "Timothy Liang",
       position: "Structures Lead",
-      major: "Civil Engineering '26",
-      hometown: "Denver, Colorado",
+      major: "Mechanical Engineering '28",
       department: "Structures"
     },
     {
-      name: "Tom Anderson",
+      name: "Andrew Ahn",
       position: "Structures Member",
-      major: "Materials Science '27",
-      hometown: "Portland, Oregon",
-      department: "Structures"
+      major: "Mechanical Engineering '25",
+      department: "Structures",
+      photo: "/andrew_ahn.jpeg"
     },
     {
-      name: "Nina Patel",
+      name: "Jacob Kim",
       position: "Structures Member",
       major: "Mechanical Engineering '26",
-      hometown: "Atlanta, Georgia",
       department: "Structures"
     },
     {
-      name: "Chris Thompson",
+      name: "Ethan Dunn",
       position: "Structures Member",
-      major: "Civil Engineering '27",
-      hometown: "Minneapolis, Minnesota",
+      major: "Mechanical Engineering '27",
       department: "Structures"
     },
-    {
-      name: "Sofia Rodriguez",
-      position: "Structures Member",
-      major: "Mechanical Engineering '28",
-      hometown: "Tampa, Florida",
-      department: "Structures"
-    }
+
   ];
 
   const avionicsTeam = [
     {
-      name: "Kevin Zhang",
+      name: "David Galotto",
       position: "Avionics Lead",
-      major: "Electrical Engineering '26",
-      hometown: "New York, New York",
+      major: "Electrical Engineering '28",
       department: "Avionics"
     },
     {
-      name: "Amanda Foster",
+      name: "Eric Gendlin",
       position: "Avionics Member",
-      major: "Computer Engineering '27",
-      hometown: "Phoenix, Arizona",
+      major: "Mechanical Engineering '28",
       department: "Avionics"
     },
     {
-      name: "Carlos Mendez",
+      name: "Jessia Mao",
       position: "Avionics Member",
-      major: "Electrical Engineering '26",
-      hometown: "Houston, Texas",
+      major: "Electrical Engineering '28",
       department: "Avionics"
-    }
+    },
+    {
+      name: "Johnny Shi",
+      position: "Avionics Member",
+      major: "Electrical Engineering '27",
+      department: "Avionics"
+    },
   ];
 
-  const flightOpsTeam = [
-    {
-      name: "Jessica Lee",
-      position: "Flight Operations Lead",
-      major: "Mechanical Engineering '26",
-      hometown: "San Diego, California",
-      department: "Flight Operations"
-    },
-    {
-      name: "Ryan Thompson",
-      position: "Flight Operations Member",
-      major: "Aerospace Engineering '27",
-      hometown: "Dallas, Texas",
-      department: "Flight Operations"
-    },
-    {
-      name: "Sophie Martin",
-      position: "Flight Operations Member",
-      major: "Mechanical Engineering '26",
-      hometown: "Philadelphia, Pennsylvania",
-      department: "Flight Operations"
-    }
-  ];
+
 
   const renderTeamSection = (title, members, color) => (
     <div className="team-section">
@@ -164,15 +109,18 @@ const About = () => {
         {members.map((member, index) => (
           <div key={index} className="member-card">
             <div className="member-photo">
-              <div className="photo-placeholder">
-                <span>👤</span>
-              </div>
+              {member.photo ? (
+                <img src={member.photo} alt={`${member.name}`} className="member-photo-img" />
+              ) : (
+                <div className="photo-placeholder">
+                  <span>👤</span>
+                </div>
+              )}
             </div>
             <div className="member-info">
               <h4 className="member-name">{member.name}</h4>
               <p className="member-position">{member.position}</p>
               <p className="member-major">{member.major}</p>
-              <p className="member-hometown">{member.hometown}</p>
             </div>
           </div>
         ))}
@@ -182,16 +130,16 @@ const About = () => {
 
   return (
     <div className="about">
-      <div className="about-hero">
-        <div className="container">
-          <h1>About Astrojays</h1>
-          <p>
-            We are a passionate team of undergraduate engineers at Johns Hopkins University, 
-            dedicated to pushing the boundaries of collegiate rocketry through innovation, 
-            collaboration, and hands-on learning.
-          </p>
+              <div className="about-hero">
+          <div className="container">
+            <h1>Meet the Team</h1>
+            <p>
+              We are a passionate team of undergraduate engineers at Johns Hopkins University, 
+              dedicated to pushing the boundaries of collegiate rocketry through innovation, 
+              collaboration, and hands-on learning.
+            </p>
+          </div>
         </div>
-      </div>
 
       <div className="about-content">
         <div className="container">
@@ -225,7 +173,6 @@ const About = () => {
                     <h3 className="executive-name">{member.name}</h3>
                     <p className="executive-position">{member.position}</p>
                     <p className="executive-major">{member.major}</p>
-                    <p className="executive-hometown">{member.hometown}</p>
                   </div>
                 </div>
               ))}
@@ -237,7 +184,6 @@ const About = () => {
             {renderTeamSection("Propulsion", propulsionTeam, "propulsion")}
             {renderTeamSection("Structures", structuresTeam, "structures")}
             {renderTeamSection("Avionics", avionicsTeam, "avionics")}
-            {renderTeamSection("Flight Operations", flightOpsTeam, "flight operations")}
           </section>
 
           <section className="join-team">
@@ -250,8 +196,8 @@ const About = () => {
             <div className="join-info">
               <div className="join-card">
                 <h4>📧 Contact Us</h4>
-                <p>Email: astrojays@jhu.edu</p>
-                <p>Instagram: @astrojays_rocket</p>
+                <p>Email: <a href="mailto:hopkinsrocketry@gmail.com">hopkinsrocketry@gmail.com</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/hopkinsrocketry/" target="_blank" rel="noopener noreferrer">@hopkinsrocketry</a></p>
               </div>
               <div className="join-card">
                 <h4>🏢 Location</h4>
@@ -260,7 +206,7 @@ const About = () => {
               </div>
               <div className="join-card">
                 <h4>⏰ Meetings</h4>
-                <p>Weekly on Thursdays</p>
+                <p>Weekly on Mondays</p>
                 <p>6:00 PM - 8:00 PM</p>
               </div>
             </div>

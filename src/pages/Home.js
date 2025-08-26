@@ -33,11 +33,11 @@ const Home = () => {
             <p>Active Members</p>
           </div>
           <div className="stat-item">
-            <h3>5+</h3>
+            <h3>20+</h3>
             <p>Rockets Built</p>
           </div>
           <div className="stat-item">
-            <h3>3</h3>
+            <h3>5+</h3>
             <p>Competitions</p>
           </div>
           <div className="stat-item">
@@ -61,15 +61,15 @@ const Home = () => {
             </p>
             <div className="mission-highlights">
               <div className="highlight">
-                <h4>🚀 Innovation</h4>
+                <h4>Innovation</h4>
                 <p>Pushing the boundaries of collegiate rocketry with cutting-edge technology</p>
               </div>
               <div className="highlight">
-                <h4>🎓 Education</h4>
+                <h4>Education</h4>
                 <p>Providing hands-on engineering experience beyond the classroom</p>
               </div>
               <div className="highlight">
-                <h4>🤝 Collaboration</h4>
+                <h4>Collaboration</h4>
                 <p>Working across disciplines to achieve ambitious engineering goals</p>
               </div>
             </div>

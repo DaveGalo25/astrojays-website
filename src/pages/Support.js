@@ -236,28 +236,7 @@ const Support = () => {
             </div>
           </section>
 
-          {/* FAQ Section */}
-          <section className="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div className="faq-grid">
-              <div className="faq-item">
-                <h4>Is my donation tax-deductible?</h4>
-                <p>Yes, donations made through Johns Hopkins University are tax-deductible to the extent allowed by law.</p>
-              </div>
-              <div className="faq-item">
-                <h4>Can I specify how my donation is used?</h4>
-                <p>Absolutely! You can designate your donation for specific projects, equipment, or general team support.</p>
-              </div>
-              <div className="faq-item">
-                <h4>Do you accept in-kind donations?</h4>
-                <p>Yes, we welcome in-kind donations of materials, equipment, and services. Please contact us to discuss.</p>
-              </div>
-              <div className="faq-item">
-                <h4>How can my company get involved?</h4>
-                <p>We offer corporate sponsorship opportunities, mentorship programs, and recruitment partnerships.</p>
-              </div>
-            </div>
-          </section>
+
         </div>
       </div>
     </div>

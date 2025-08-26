@@ -5,91 +5,103 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      name: "Phoenix I",
-      year: "2024",
+      name: "Stellaris",
+      year: "2025",
       category: "Competition Rocket",
-      description: "Our flagship competition rocket designed for the Spaceport America Cup. Features advanced composite structures, custom propulsion system, and integrated telemetry.",
+      description: "Our most recent project Stellaris took us to new speeds and heights. Stellaris was a 4\" diameter, 9ft tall, 40lb rocket powered by our Prometheus solid rocket engine. Stellaris was 99% student engineered, with the team manufacturing nearly all aerostructures and avionic systems in-house. We launched Stellaris in the Mojave Desert at the 2025 FAR 51025 Unlimited Competition where it reached a maximum speed of Mach 1.2, reached an altitude of 17943ft, and pulled over 20g's at Max-Q. Using aerodynamic simulations, we predicted an apogee of 18,000 ft, placing us 2nd in the competition.",
       specs: {
-        length: "8.5 ft",
-        diameter: "6 in",
-        weight: "45 lbs",
-        motor: "Custom N-Class",
-        altitude: "10,000 ft"
+        length: "9 ft",
+        diameter: "4 in",
+        weight: "47 lbs",
+        motor: "PN-02 (M2500)",
+        altitude: "18,000 ft",
+        maxSpeed: "Mach 1.1 (770mph)",
+        maxAcceleration: "20g"
       },
       achievements: [
-        "Spaceport America Cup 2024 Participant",
-        "Advanced composite construction",
-        "Custom motor development",
-        "Integrated flight computer"
+        "2nd Place at FAR 51025 Competition",
+        "99% student engineered",
+        "Reached Mach 1.2 speed",
+        "Altitude of 17,943 ft",
+        "Custom Prometheus motor"
       ],
       image: "🚀",
       status: "Completed"
     },
     {
       id: 2,
-      name: "Nova II",
-      year: "2023",
-      category: "Research Rocket",
-      description: "Experimental rocket featuring hybrid propulsion technology and deployable payload systems. Designed to test new materials and recovery mechanisms.",
+      name: "IREC '26 Rocket",
+      year: "2026",
+      category: "Competition Rocket",
+      description: "Our rocket project for 2026 is an exciting one! We plan on attending the International Rocket Engineering Competition next summer in Texas. The currently untitled rocket is currently still in the design phase, but is projected to reach speeds exceeding Mach 2, and a target altitude of 30,000ft, which is the cruising altitude for most airliners!",
       specs: {
-        length: "6.2 ft",
-        diameter: "4 in",
-        weight: "28 lbs",
-        motor: "Hybrid H-Class",
-        altitude: "6,500 ft"
+        length: "14 ft",
+        diameter: "6 in",
+        weight: "~100 lbs",
+        motor: "O6000 (Predicted)",
+        altitude: "30,000 ft (Projected)",
+        maxSpeed: "Mach 1.8 (1330mph)",
+        maxAcceleration: "20g"
       },
       achievements: [
-        "Hybrid propulsion system",
-        "Deployable payload bay",
-        "Advanced recovery system",
-        "Material testing platform"
+        "IREC 2026 Competition Entry",
+        "Target altitude of 30,000 ft",
+        "Projected Mach 2+ speeds",
+        "Largest rocket ever built",
+        "Advanced propulsion system"
+      ],
+      image: "🚀",
+      status: "In Development"
+    },
+    {
+      id: 3,
+      name: "Baja Blast",
+      year: "2023",
+      category: "Two-Stage Rocket",
+      description: "Baja Blast was our first attempt at a two-stage rocket. Implementing extremely complex avionics systems to control stage separation was the highlight of this vehicle. We designed custom PCBs using Kalman Filtering to accurately determine the orientation, velocity, and acceleration of the rocket to control the stage separation event.",
+      specs: {
+        length: "12 ft",
+        diameter: "4 in",
+        weight: "~50 lbs",
+        motor: "K1200 and K375",
+        altitude: "10,000 ft (Predicted)",
+        maxSpeed: "Mach 0.8",
+        maxAcceleration: "8g"
+      },
+      achievements: [
+        "First two-stage rocket",
+        "Custom avionics system",
+        "Kalman Filter implementation",
+        "Complex stage separation",
+        "Advanced PCB design"
       ],
       image: "🚀",
       status: "Completed"
     },
     {
-      id: 3,
-      name: "Stellar I",
-      year: "2023",
-      category: "Educational Rocket",
-      description: "Designed as a learning platform for new team members. Features modular design allowing for easy component testing and educational demonstrations.",
+      id: 4,
+      name: "Strugglebus",
+      year: "2022",
+      category: "Competition Rocket",
+      description: "Strugglebus was our first ever competition rocket, launching at the Mojave Desert FAR Launch Site in 2022. Powered by an Aerotech L1000 solid rocket motor, Strugglebus reached an altitude of 10,000ft, and a speed of Mach 0.8, setting a club record at the time and placing second at the FAR Unlimited Competition.",
       specs: {
-        length: "4.8 ft",
+        length: "9 ft",
         diameter: "3 in",
-        weight: "15 lbs",
-        motor: "Commercial I-Class",
-        altitude: "3,200 ft"
+        weight: "~30 lbs",
+        motor: "L1000",
+        altitude: "10,000 ft",
+        maxSpeed: "Mach 0.8",
+        maxAcceleration: "10g"
       },
       achievements: [
-        "Modular design system",
-        "Educational platform",
-        "Multiple successful flights",
-        "Team training tool"
+        "2nd Place at FAR Competition",
+        "First competition rocket",
+        "Club altitude record",
+        "Commercial motor success",
+        "Foundation for future rockets"
       ],
       image: "🚀",
-      status: "Active"
-    },
-    {
-      id: 4,
-      name: "Orion III",
-      year: "2024",
-      category: "High Performance",
-      description: "High-performance rocket designed for maximum altitude and speed. Features advanced aerodynamics and lightweight composite construction.",
-      specs: {
-        length: "7.1 ft",
-        diameter: "5.5 in",
-        weight: "32 lbs",
-        motor: "Commercial M-Class",
-        altitude: "12,500 ft"
-      },
-      achievements: [
-        "Maximum altitude record",
-        "Advanced aerodynamics",
-        "Lightweight construction",
-        "High-speed flight"
-      ],
-            image: "🚀",
-      status: "In Development"
+      status: "Completed"
     }
   ];
 
@@ -137,6 +149,18 @@ const Projects = () => {
                 <span className="spec-label">Altitude:</span>
                 <span className="spec-value">{project.specs.altitude}</span>
               </li>
+              {project.specs.maxSpeed && (
+                <li className="spec-item">
+                  <span className="spec-label">Max Speed:</span>
+                  <span className="spec-value">{project.specs.maxSpeed}</span>
+                </li>
+              )}
+              {project.specs.maxAcceleration && (
+                <li className="spec-item">
+                  <span className="spec-label">Max Acceleration:</span>
+                  <span className="spec-value">{project.specs.maxAcceleration}</span>
+                </li>
+              )}
             </ul>
           </div>
           
@@ -163,7 +187,7 @@ const Projects = () => {
       </div>
       <div className="projects-hero">
         <div className="container">
-          <h1>Our Projects</h1>
+          <h1>Our Rockets</h1>
           <p>
             Explore our portfolio of rockets and engineering projects, from educational 
             platforms to competition vehicles pushing the boundaries of collegiate rocketry.
@@ -176,7 +200,7 @@ const Projects = () => {
           <div className="projects-intro">
             <h2>Rocket Portfolio</h2>
             <p>
-              Each project represents a unique engineering challenge and learning opportunity. 
+              Each rocket represents a unique engineering challenge and learning opportunity. 
               From our first educational rockets to our latest competition vehicles, every 
               design incorporates lessons learned and new innovations.
             </p>
@@ -194,49 +218,21 @@ const Projects = () => {
                 <div className="stat-label">Rockets Built</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">15+</div>
-                <div className="stat-label">Successful Flights</div>
+                <div className="stat-number">3</div>
+                <div className="stat-label">Competitions</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">12,500</div>
+                <div className="stat-number">18,000</div>
                 <div className="stat-label">Max Altitude (ft)</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">3</div>
-                <div className="stat-label">Competitions</div>
+                <div className="stat-number">Mach 1.1</div>
+                <div className="stat-label">Max Speed</div>
               </div>
             </div>
           </div>
 
-          <div className="future-projects">
-            <h2>Future Projects</h2>
-            <div className="future-grid">
-              <div className="future-card">
-                <h3>Mars Mission Simulator</h3>
-                <p>
-                  Developing a rocket system to simulate Mars landing conditions, 
-                  including parachute deployment and autonomous navigation.
-                </p>
-                <div className="future-timeline">Expected: 2025</div>
-              </div>
-              <div className="future-card">
-                <h3>Reusable Rocket System</h3>
-                <p>
-                  Designing a rocket with controlled descent and landing capabilities, 
-                  inspired by commercial space industry developments.
-                </p>
-                <div className="future-timeline">Expected: 2025</div>
-              </div>
-              <div className="future-card">
-                <h3>Advanced Propulsion Lab</h3>
-                <p>
-                  Building a dedicated facility for testing new propulsion technologies 
-                  and materials in controlled environments.
-                </p>
-                <div className="future-timeline">Expected: 2026</div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
