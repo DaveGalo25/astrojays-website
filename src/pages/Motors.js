@@ -22,7 +22,7 @@ const Motors = () => {
         "Two successful firings",
         "Competition success"
       ],
-      image: "🚀",
+      image: "/51E1F4EE-7BE4-4673-8376-DFDA6E68AF36_4_5005_c.jpeg",
       status: "Completed"
     },
     {
@@ -44,7 +44,7 @@ const Motors = () => {
         "High thrust design",
         "Learning from failure"
       ],
-      image: "🚀",
+      image: "/B446C10D-A9A1-462F-8780-B8ED75FABF44_4_5005_c.jpeg",
       status: "Failed"
     },
     {
@@ -64,7 +64,7 @@ const Motors = () => {
         "Hybrid propulsion system",
         "JHU APL test site validation"
       ],
-      image: "🚀",
+      image: "/48F2CAC0-2F3B-4B7F-B5EF-E440E3FC02B9_4_5005_c.jpeg",
       status: "Completed"
     }
   ];
@@ -133,11 +133,15 @@ const Motors = () => {
           </div>
           
           <div className="motor-image-container">
-            <img 
-              src="/01_58_51a_remotesite-2-frame-8.jpg.avif" 
-              alt="Rocket motor" 
-              className="motor-rocket-image"
-            />
+            {motor.image && motor.image !== "🚀" ? (
+              <img 
+                src={motor.image} 
+                alt={`${motor.name} motor`} 
+                className="motor-rocket-image"
+              />
+            ) : (
+              <div className="motor-emoji">{motor.image}</div>
+            )}
           </div>
         </div>
       </div>
@@ -146,13 +150,7 @@ const Motors = () => {
 
   return (
     <div className="motors">
-      <div className="motors-banner-wrapper">
-        <img 
-          src="/01_58_51a_remotesite-2-frame-8.jpg.avif" 
-          alt="Horizontal rocket launch with smoke trail" 
-          className="motors-banner"
-        />
-      </div>
+
       <div className="motors-hero">
         <div className="container">
           <h1>Our Motors</h1>

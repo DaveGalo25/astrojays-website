@@ -7,13 +7,15 @@ const About = () => {
       name: "Granger Maher",
       position: "President",
       major: "Mechanical Engineering '27",
-      department: "Leadership"
+      department: "Leadership",
+      photo: "/1722097476559.jpeg"
     },
     {
       name: "Ashwin Narayanan",
       position: "Chief Engineer",
       major: "Mechanical Engineering '27",
-      department: "Leadership"
+      department: "Leadership",
+      photo: "/1749590493979.jpeg"
     }
   ];
 
@@ -22,25 +24,29 @@ const About = () => {
       name: "Granger Maher",
       position: "Liquid Propulsion Lead",
       major: "Mechanical Engineering '27",
-      department: "Propulsion"
+      department: "Propulsion",
+      photo: "/1722097476559.jpeg"
     },
     {
       name: "Ashwin Narayanan",
       position: "Solid Propulsion Lead",
       major: "Mechanical Engineering '27",
-      department: "Propulsion"
+      department: "Propulsion",
+      photo: "/1749590493979.jpeg"
     },
     {
       name: "Brennan McGrann",
       position: "Propulsion Member",
       major: "Chemical Engineering '28",
-      department: "Propulsion"
+      department: "Propulsion",
+      photo: "/1741271562191.jpeg"
     },
     {
       name: "Brianna Bledsoe",
       position: "Propulsion Member",
       major: "Mechanical Engineering '27",
-      department: "Propulsion"
+      department: "Propulsion",
+      photo: "/1738817199378.jpeg"
     },
   ];
 
@@ -49,7 +55,8 @@ const About = () => {
       name: "Timothy Liang",
       position: "Structures Lead",
       major: "Mechanical Engineering '28",
-      department: "Structures"
+      department: "Structures",
+      photo: "/DSC_7015.jpg"
     },
     {
       name: "Andrew Ahn",
@@ -62,13 +69,15 @@ const About = () => {
       name: "Jacob Kim",
       position: "Structures Member",
       major: "Mechanical Engineering '26",
-      department: "Structures"
+      department: "Structures",
+      photo: "/1732053382682.jpeg"
     },
     {
       name: "Ethan Dunn",
       position: "Structures Member",
       major: "Mechanical Engineering '27",
-      department: "Structures"
+      department: "Structures",
+      photo: "/1694121368252.jpeg"
     },
 
   ];
@@ -78,19 +87,22 @@ const About = () => {
       name: "David Galotto",
       position: "Avionics Lead",
       major: "Electrical Engineering '28",
-      department: "Avionics"
+      department: "Avionics",
+      photo: "/DSC_7031.jpg"
     },
     {
       name: "Eric Gendlin",
       position: "Avionics Member",
       major: "Mechanical Engineering '28",
-      department: "Avionics"
+      department: "Avionics",
+      photo: "/DSC_7032.jpg"
     },
     {
-      name: "Jessia Mao",
+      name: "Jecia Mao",
       position: "Avionics Member",
       major: "Electrical Engineering '28",
-      department: "Avionics"
+      department: "Avionics",
+      photo: "/1754797367552.jpeg"
     },
     {
       name: "Johnny Shi",
@@ -165,9 +177,13 @@ const About = () => {
               {executiveBoard.map((member, index) => (
                 <div key={index} className="executive-card">
                   <div className="executive-photo">
-                    <div className="photo-placeholder">
-                      <span>👤</span>
-                    </div>
+                    {member.photo ? (
+                      <img src={member.photo} alt={`${member.name}`} className="executive-photo-img" />
+                    ) : (
+                      <div className="photo-placeholder">
+                        <span>👤</span>
+                      </div>
+                    )}
                   </div>
                   <div className="executive-info">
                     <h3 className="executive-name">{member.name}</h3>

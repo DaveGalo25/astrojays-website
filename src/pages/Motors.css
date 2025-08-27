@@ -173,8 +173,19 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
   max-height: 400px;
+}
+
+.motor-emoji {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  color: #666;
 }
 
 .motor-specs h4 {

@@ -168,8 +168,27 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  object-fit: cover;
-  max-height: 400px;
+  object-fit: contain;
+  object-position: center;
+  max-height: 500px;
+}
+
+/* Move IREC rocket image down to center next to motor specs */
+.projects-grid .project-card:nth-child(2) .project-rocket-image {
+  object-position: center bottom;
+  margin-top: 200px;
+}
+
+.project-emoji {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(51, 179, 230, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  min-height: 200px;
+  color: #33b3e6;
 }
 
 .project-specs h4 {

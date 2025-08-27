@@ -25,7 +25,7 @@ const Projects = () => {
         "Altitude of 17,943 ft",
         "Custom Prometheus motor"
       ],
-      image: "🚀",
+      image: "/IMG_0251.jpeg",
       status: "Completed"
     },
     {
@@ -50,7 +50,7 @@ const Projects = () => {
         "Largest rocket ever built",
         "Advanced propulsion system"
       ],
-      image: "🚀",
+      image: "/9A944662-AD85-4E37-8D80-C6F616CF1912_4_5005_c.jpeg",
       status: "In Development"
     },
     {
@@ -75,7 +75,7 @@ const Projects = () => {
         "Complex stage separation",
         "Advanced PCB design"
       ],
-      image: "🚀",
+      image: "/baja-blast-rocket.png",
       status: "Completed"
     },
     {
@@ -100,7 +100,7 @@ const Projects = () => {
         "Commercial motor success",
         "Foundation for future rockets"
       ],
-      image: "🚀",
+      image: "/8F93DD8F-229D-455D-9A2F-3B01853F254F.png",
       status: "Completed"
     }
   ];
@@ -165,11 +165,15 @@ const Projects = () => {
           </div>
           
           <div className="project-image-container">
-            <img 
-              src="/01_58_51a_remotesite-2-frame-8.jpg.avif" 
-              alt="Rocket launch" 
-              className="project-rocket-image"
-            />
+            {project.image && project.image.startsWith('/') ? (
+              <img 
+                src={project.image} 
+                alt={`${project.name} rocket`} 
+                className="project-rocket-image"
+              />
+            ) : (
+              <div className="project-emoji">{project.image}</div>
+            )}
           </div>
         </div>
       </div>
@@ -178,13 +182,7 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <div className="projects-banner-wrapper">
-        <img 
-          src="/01_58_51a_remotesite-2-frame-8.jpg.avif" 
-          alt="Horizontal rocket launch with smoke trail" 
-          className="projects-banner"
-        />
-      </div>
+
       <div className="projects-hero">
         <div className="container">
           <h1>Our Rockets</h1>

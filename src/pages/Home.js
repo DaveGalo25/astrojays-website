@@ -8,7 +8,7 @@ const Home = () => {
       {/* Hero Section */}
       <section 
         className="hero hero-bg"
-        style={{ background: "url('/xbHtcdhwi8hRvXYVtZNbbh-1200-80.jpg') center center/cover no-repeat" }}
+        style={{ background: "url('/IMG_0528.jpeg') center center/cover no-repeat" }}
       >
         <div className="hero-overlay"></div>
         <div className="hero-content hero-centered">
@@ -59,6 +59,7 @@ const Home = () => {
               We emphasize innovation, safety, and educational excellence while competing 
               in national and international rocketry challenges.
             </p>
+
             <div className="mission-highlights">
               <div className="highlight">
                 <h4>Innovation</h4>
@@ -97,6 +98,15 @@ const Home = () => {
               <h3>Team Growth</h3>
               <p>Expanded to over 25 active members across multiple engineering disciplines</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Photo Section */}
+      <section className="team-photo">
+        <div className="container">
+          <div className="team-photo-content">
+            <img src="/DSC_7038.jpg" alt="Astrojays team members with rockets in front of Shriver Hall" />
           </div>
         </div>
       </section>
